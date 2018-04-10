@@ -1,8 +1,13 @@
 # After changing this file, check it on:
 # http://lint.travis-ci.org/
-sudo: false
-os: power
+matrix:
+  include:
+    - sudo: false
+    - sudo: required
+
+os: linux-ppc64le
 dist: xenial
+
 cache:
   directories:
     - $HOME/.cache/pip
