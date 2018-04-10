@@ -1,12 +1,8 @@
 # After changing this file, check it on:
 # http://lint.travis-ci.org/
-matrix:
-  include:
-    - sudo: false
-    - sudo: required
-
 os: linux-ppc64le
 dist: xenial
+sudo: false
 
 cache:
   directories:
